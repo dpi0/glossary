@@ -52,8 +52,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} 
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          # personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          external_repository: airbyteglossary/airbyteglossary.github.io 
+          # external_repository: airbyteglossary/airbyteglossary.github.io 
           publish_branch: master  # deploying branch
-          cname: glossary.airbyte.com # without trailing slash #https://airbytehq.github.io/brain
+          # cname: glossary.airbyte.com # without trailing slash #https://airbytehq.github.io/brain
